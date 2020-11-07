@@ -23,21 +23,29 @@ namespace ContactListApi.Data
             // Fluent API Configuration
             // ========================
 
-            // Contact
+            // Address
             // =======
-
-            modelBuilder.Entity<Contact>()
-                .HasOne(c => c.Address)
-                .WithOne(a => a.Contact)
-                .HasForeignKey<Address>(y => y.ContactId)
-                .OnDelete(DeleteBehavior.Cascade);
 
             // Relations
             // ---------
 
+            // Contact
+            // =======
 
-            // Unique Indexes
-            // --------------
+            // Relations
+            // ---------
+            modelBuilder.Entity<Contact>(c =>
+            {
+                c.HasOne(x => x.Address)
+                .WithOne(a => a.Contact)
+                .HasForeignKey<Address>(y => y.ContactId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+                //c.HasMany(x => x.PhoneNumbers)
+                //.WithOne(p => p.Contact)
+                //.HasForeignKey(p => p.ContactId)
+                //.IsRequired();
+            });
 
             // PhoneNumber
             // ===========
@@ -49,7 +57,7 @@ namespace ContactListApi.Data
                 .HasOne(p => p.Contact)
                 .WithMany(c => c.PhoneNumbers)
                 .HasForeignKey(p => p.ContactId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
 
             // Unique Indexes
             // --------------
