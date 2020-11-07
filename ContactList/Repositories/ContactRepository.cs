@@ -28,6 +28,7 @@ namespace ContactListApi.Repositories
                     Id = c.Id,
                     FirstName = c.FirstName,
                     LastName = c.LastName,
+                    Type = c.Type,
                     Address = new AddressDTO()
                     {
                         Id = c.Address.Id,
@@ -58,6 +59,7 @@ namespace ContactListApi.Repositories
                     Id = c.Id,
                     FirstName = c.FirstName,
                     LastName = c.LastName,
+                    Type = c.Type,
                     Address = new AddressDTO()
                     {
                         Id = c.Address.Id,
@@ -93,11 +95,11 @@ namespace ContactListApi.Repositories
 
             await _context.SaveChangesAsync().ConfigureAwait(false);
 
-
             var contactResult = _context.Contacts.Add(new Contact()
             {
                 FirstName = contactPostDTO.FirstName,
                 LastName = contactPostDTO.LastName,
+                Type = contactPostDTO.Type,
                 Address = addressResult.Entity
             });
 
@@ -110,7 +112,7 @@ namespace ContactListApi.Repositories
                     Contact = contactResult.Entity,
                     ContactId = contactResult.Entity.Id
                 });
-                
+
                 await _context.SaveChangesAsync().ConfigureAwait(false);
             }
 
@@ -119,7 +121,7 @@ namespace ContactListApi.Repositories
             
 
             contactPostDTO.Id = contactResult.Entity.Id;
-            contactPostDTO.Address.Id = addressResult.Entity.Id;
+            //contactPostDTO.Address.Id = addressResult.Entity.Id;
 
             return contactPostDTO;
         }
@@ -137,6 +139,7 @@ namespace ContactListApi.Repositories
                 
                 contact.FirstName = contactPutDTO.FirstName;
                 contact.LastName = contactPutDTO.LastName;
+                contact.Type = contactPutDTO.Type;
 
                 await _context.SaveChangesAsync().ConfigureAwait(false);
             }

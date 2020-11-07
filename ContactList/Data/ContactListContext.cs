@@ -37,7 +37,7 @@ namespace ContactListApi.Data
             modelBuilder.Entity<Contact>(c =>
             {
                 c.HasOne(x => x.Address)
-                .WithOne(a => a.Contact)
+                .WithOne(x => x.Contact)
                 .HasForeignKey<Address>(y => y.ContactId)
                 .OnDelete(DeleteBehavior.Cascade);
 

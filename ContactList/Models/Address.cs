@@ -33,7 +33,7 @@ namespace ContactListApi.Models
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Lengte tussen 2 en 50 karakters.")]
         [RegularExpression(@"^[a-zA-Z0-9ÀàáÂâçÉéÈèÊêëïîÔô'-\.\s]+$", ErrorMessage = "Foute karakters gebruikt")]
         public string City { get; set; }
-        public int ContactId { get; set; }
+        public int? ContactId { get; set; }
         public Contact Contact { get; set; }
     }
 }

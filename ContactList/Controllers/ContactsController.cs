@@ -11,6 +11,7 @@ namespace ContactListApi.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]")]
+    [ApiController]
     public class ContactsController : ControllerBase
     {
         private readonly ContactListContext _context;
@@ -33,23 +34,23 @@ namespace ContactListApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<ContactDTO>> GetContact(int id)
         {
-            var Contact = await _contactRepository.GetContact(id).ConfigureAwait(false);
+            var contact = await _contactRepository.GetContact(id).ConfigureAwait(false);
 
-            if (Contact == null)
+            if (contact == null)
             {
                 return NotFound();
             }
 
-            return Contact;
+            return contact;
         }
 
         // POST: api/Contacts
         [HttpPost]
-        public async Task<ActionResult<ContactDTO>> PostContact(ContactDTO ContactDTO)
+        public async Task<ActionResult<ContactDTO>> PostContact(ContactDTO contactDTO)
         {
-            var ContactResult = await _contactRepository.PostContact(ContactDTO).ConfigureAwait(false);
+            var contactResult = await _contactRepository.PostContact(contactDTO).ConfigureAwait(false);
 
-            return CreatedAtAction("GetContact", new { id = ContactResult.Id }, ContactResult);
+            return CreatedAtAction("GetContact", new { id = contactResult.Id }, contactResult);
         }
 
         // PUT: api/Contacts/5

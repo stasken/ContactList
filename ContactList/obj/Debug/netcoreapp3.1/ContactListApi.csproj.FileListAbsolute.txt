@@ -18,6 +18,7 @@ C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\Micro
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -119,7 +120,6 @@ C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\runti
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\STAS\source\repos\ContactList\ContactList\obj\Debug\netcoreapp3.1\ContactListApi.csprojAssemblyReference.cache
 C:\Users\STAS\source\repos\ContactList\ContactList\obj\Debug\netcoreapp3.1\ContactListApi.AssemblyInfoInputs.cache
 C:\Users\STAS\source\repos\ContactList\ContactList\obj\Debug\netcoreapp3.1\ContactListApi.AssemblyInfo.cs
 C:\Users\STAS\source\repos\ContactList\ContactList\obj\Debug\netcoreapp3.1\ContactListApi.csproj.CoreCompileInputs.cache
