@@ -120,6 +120,7 @@ C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\runti
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\STAS\source\repos\ContactList\ContactList\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\STAS\source\repos\ContactList\ContactList\obj\Debug\netcoreapp3.1\ContactListApi.csprojAssemblyReference.cache
 C:\Users\STAS\source\repos\ContactList\ContactList\obj\Debug\netcoreapp3.1\ContactListApi.AssemblyInfoInputs.cache
 C:\Users\STAS\source\repos\ContactList\ContactList\obj\Debug\netcoreapp3.1\ContactListApi.AssemblyInfo.cs
 C:\Users\STAS\source\repos\ContactList\ContactList\obj\Debug\netcoreapp3.1\ContactListApi.csproj.CoreCompileInputs.cache

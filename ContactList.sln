@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactListApi", "ContactList\ContactListApi.csproj", "{136C2913-1BD7-4DA8-984B-0360D309F45B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactListApi", "ContactList\ContactListApi.csproj", "{136C2913-1BD7-4DA8-984B-0360D309F45B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactListUI", "ContactListUI\ContactListUI.csproj", "{66D2B643-91FC-4F73-860B-35EFA5B51FDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{136C2913-1BD7-4DA8-984B-0360D309F45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{136C2913-1BD7-4DA8-984B-0360D309F45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{136C2913-1BD7-4DA8-984B-0360D309F45B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D2B643-91FC-4F73-860B-35EFA5B51FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D2B643-91FC-4F73-860B-35EFA5B51FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D2B643-91FC-4F73-860B-35EFA5B51FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D2B643-91FC-4F73-860B-35EFA5B51FDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
