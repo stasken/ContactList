@@ -97,7 +97,7 @@ namespace ContactListUI.ViewModels
 
         public void LoadPageOne()
         {
-            ActivateItem(new AddressViewModel());
+            ActivateItem(new AddressViewModel(_selectedContact.Address));
         }
         public void LoadPageTwo()
         {
